@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.blob-shape {
+  width: 380px;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 50% 40% 50% 40%;
+}
+
+.blob-shape img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-wrapper {
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 120px 20px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.form-box {
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  .blob-shape {
+    width: 300px;
+    height: 300px;
+  }
+
+  .form-box {
+    flex-direction: column;
+    border-radius: 20px !important;
+    padding: 15px !important;
+  }
+
+  .form-box input,
+  .form-box button {
+    width: 100%;
+  }
+}
